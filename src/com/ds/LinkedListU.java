@@ -9,7 +9,7 @@ Node head;
 	public void add(Object value) {
 		Node newNode=new Node(value, null);
 		if(head==null)
-			head=head;
+			head=newNode;
 		else {
 			newNode.next=head;
 			head=newNode;
