@@ -18,6 +18,18 @@ public class ArrayListDemo {
 		for (String st: ar)
 		System.out.println(st);
 		
+		ArrayList<employee> emp= new ArrayList<employee>();
+		emp.add(new employee("Billy", 10));
+		emp.add(new employee("Mandy", 11));
+		for (employee st: emp)
+			System.out.println(st.name + ", " + st.age);
 	}
-
+	static class employee {
+		String name;
+		int age;
+		public employee(String name, int age) {
+			this.name = name;
+			this.age = age;
+		}
+	}
 }
